@@ -8,8 +8,8 @@ import {
 } from 'next/navigation';
 import useSWR from 'swr';
 
-import { fetcher } from '@/app/page';
 import RecipeDetails from '@/components/recipe-detail';
+import { fetcher } from '@/lib/fetcher';
 
 export type DishRecipe = {
   id: number;
@@ -18,7 +18,7 @@ export type DishRecipe = {
   instructions: string;
   cuisine: string;
   mealType: string[];
-  image?: string;
+  image: string;
 };
 
 const RecipeItem: React.FC = () => {

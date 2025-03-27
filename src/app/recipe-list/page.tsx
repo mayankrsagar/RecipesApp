@@ -6,8 +6,7 @@ import Link from 'next/link';
 import useSWR from 'swr';
 
 import RecipeList from '@/components/recipe-list';
-
-import { fetcher } from '../page';
+import { fetcher } from '@/lib/fetcher';
 
 export interface Recipe {
   id: number;

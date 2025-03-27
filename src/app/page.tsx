@@ -1,8 +1,5 @@
 import Link from 'next/link';
 
-export const fetcher = <T,>(url: string): Promise<T> =>
-  fetch(url).then((res) => res.json());
-
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-4">
