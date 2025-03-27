@@ -30,7 +30,7 @@ const RecipeItem: React.FC = () => {
     fetcher
   );
 
-  const previousPage = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const previousPage = () => {
     router.push("/recipe-list");
   };
 
